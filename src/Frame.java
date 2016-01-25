@@ -43,7 +43,8 @@ public class Frame extends JFrame implements ActionListener {
             if (!inputDate.getText().trim().equals("") || inputDate.getText().trim().length()!=0) {
                 Adler instance = new Adler();
                 instance.insertToA(inputDate.getText());
-                outputDate.setText(instance.showArray("A", instance.A));
+                outputDate.setText(instance.convertToAscii(inputDate.getText()));
+                outputDate.setText(outputDate.getText() + "\n" +instance.showArray("A", instance.A));
                 instance.insertToB();
                 outputDate.setText(outputDate.getText() + "\n" + instance.showArray("B", instance.B));
                 outputDate.setText(outputDate.getText() + "\nA = " + instance.A.get(instance.A.size()-1) + " = " + instance.convertToHexArray(instance.A) + " hex");

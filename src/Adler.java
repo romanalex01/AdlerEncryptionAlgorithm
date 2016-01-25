@@ -60,4 +60,16 @@ public class Adler {
         return a;
     }
 
+    public String convertToAscii(String text) {
+        String result = "";
+        for (int i = 0; i < text.length(); i++) {
+            if(i != text.length() - 1) {
+                result += text.charAt(i) + " = " + (int) text.charAt(i) + ",   ";
+            } else {
+                result += text.charAt(i) + " = " + (int) text.charAt(i) + ".";
+            }
+        }
+        return result;
+    }
+
 }
