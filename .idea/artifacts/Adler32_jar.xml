@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Adler32:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Adler32_jar</output-path>
+    <root id="archive" name="Adler32.jar">
+      <element id="module-output" name="Adler32" />
+    </root>
+  </artifact>
+</component>
